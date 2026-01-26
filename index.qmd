@@ -85,13 +85,13 @@ Let's share our feedback about JDH
 - responsive table
 - log in/log out menu in the right top corner
 
+# Dashboard 
 
+![dashboard](./img/dashboard_article_tablet.png){.r-stretch fig-align="center"}
 
-![dashboard](2026/dashboard_article_tablet.png)
+# Dashboard mobile
 
-
-
-![dashboard](2026/dashboard_article_mobile.png)
+![dashboard](.img/dashboard_article_mobile.png){.r-stretch fig-align="center"}
 
 
 

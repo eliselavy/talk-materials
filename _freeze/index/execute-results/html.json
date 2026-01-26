@@ -1,0 +1,21 @@
+{
+  "hash": "5132d92835eba2787e418a833588b809",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"JDH TEAM RETREAT\"\nsubtitle: \"Plan for the future year\"\nauthors: \n  - name: Frédéric Clavert\n    orcid: 0000-0002-0237-2532\n    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)\n  - name: Elisabeth Guerard\n    orcid: 0000-0001-7742-4141\n    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)\n  - name: Mirjam Pfeiffer\n    orcid: 0009-0005-2265-5926\n    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)\n  - name: Aida Horaniet Ibañez\n    orcid: 0000-0003-1346-8449\n    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)\n  - name: Marion Salaün\n    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)\nlang: fr\neditor: source\nformat:\n  revealjs: \n    slide-number: true\n    # template-partials:\n    #  - title-slide.html\n    theme: [default]\n    logo: img/logo-jdh.png\n    header-logo: img/logo-jdh.png\n#    hide-from-titleSlide: text\n    footer: \"JDH retreat - 28 january 2025\"\n    scrollable: TRUE\n    smaller: TRUE\n    overview: TRUE\n    chalkboard: TRUE\n#    transition: fade\n    transition-speed: fast\n    bibliography: biblio.bib\n    menu: TRUE\n    css: style.css\n    # pointer:\n    #  pointerSize: 20\n    #  color: 'red4'\n#krevealjs-plugins:\n#  - pointer\n# filters:\n#  - reveal-header\nengine: knitr\n---\n\n# Review of the year\n\n- round table\n- 2025 Bilan\n- dashboard\n- call for papers : AI & history\n- mobile version\n\n\n\n# Round table\n\nLet's share our feedback about JDH\n\n\n\n# Bilan 2025\n\n\n\n# Dashboard\n\n![dashboard](2026/dashboard.png)\n\n\n\n- notification\n- counters with due date\n- KPI\n  - pie chart\n  - bar chart\n- new abstracts tile\n- hypothes.is\n- contact form\n- social media campaign (Facebook and Bluesky)\n- responsive table\n- log in/log out menu in the right top corner\n\n# Dashboard \n\n![dashboard](./img/dashboard_article_tablet.png){.r-stretch fig-align=\"center\"}\n\n# Dashboard mobile\n\n![dashboard](.img/dashboard_article_mobile.png){.r-stretch fig-align=\"center\"}\n\n\n\n# Call for papers : AI & History\n\nPresentation by Frederic\n\n\n\n# Framework visualisation\n\nPresentation by Aida\n\n\n\n# AI potentials\n\n- Guideline, workflow...\n- Technical review, peer review\n- Improving reading experience\n  - thematic cluster\n  - reference bibliography\n\n\n\n# Let's do a short break\n\n... we will restart at 11:15 😉\n\n\n\n# Archiving of the JDH\n\n- Inserting the JDH into a solid open source framework\n- Formalising the JDH’s editorial policy into an explicit open data / open science framework\n- Discussion with the BnL\n\n\n\n# Planning the next steps\n\nWhere to invest JDH budget 💶 ?\n\n\n# Bibliography\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
