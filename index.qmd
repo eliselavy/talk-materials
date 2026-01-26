@@ -65,7 +65,7 @@ Let's share our feedback about JDH
 
 # Bilan 2025
 
-
+See [here](https://hackmd.io/@Gol_yEahR0aJeDHjZ1CZ-g/H1v1q1vzbe) 
 
 # Dashboard overview
 
@@ -94,19 +94,13 @@ Let's share our feedback about JDH
 
 ![](.img/dashboard_article_mobile.png){.r-stretch fig-align="center"}
 
-
-
 # Call for papers : AI & History
 
 Presentation by Frederic
 
-
-
 # Framework visualisation
 
 Presentation by Aida
-
-
 
 # AI potentials
 
@@ -126,13 +120,11 @@ Presentation by Aida
 ... we will restart at 11:15 😉
 
 
-
 # Archiving of the JDH
 
 - Inserting the JDH into a solid open source framework
 - Formalising the JDH’s editorial policy into an explicit open data / open science framework
 - Discussion with the BnL
-
 
 
 # Planning the next steps
