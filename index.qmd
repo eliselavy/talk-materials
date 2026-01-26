@@ -115,6 +115,13 @@ Presentation by Aida
 
 > More than half of researchers now use AI for peer review — often against guidance see @naddaf_more_2025
 
+# AI / Human
+
+|       | General comments and summary of recommendation | Content | Structure and argument | Figures / tables | Code              | Language | Ethical approval | Data / primary sources availability |
+|-------|------------------------------------------------|---------|------------------------|------------------|-------------------|----------|------------------|-------------------------------------|
+| AI    | ✅                                              | ❌       | ❌                      | ?                | ✅                 | ✅        | ❌                | ✅                                   |
+| Human | ✅                                              | ✅       | ✅ plus-value           | ✅ Aida framework | ❌ not in practise | ❌        | ✅                | ❌                                   |
+
 # Let's do a short break
 
 ... we will restart at 11:15 😉
