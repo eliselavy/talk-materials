@@ -1,9 +1,6 @@
 ---
 title: "JDH TEAM RETREAT"
 subtitle: "Plan for the future year"
-img: img/archi-r.png
-date: "`r Sys.Date()`"
-date-format: full
 authors: 
   - name: Frédéric Clavert
     orcid: 0000-0002-0237-2532
@@ -27,8 +24,8 @@ format:
     # template-partials:
     #  - title-slide.html
     theme: [default]
-    logo: img/logo-gt.png
-    header-logo: img/logo-gt.png
+    logo: img/logo-jdh.png
+    header-logo: img/logo-jdh.png
 #    hide-from-titleSlide: text
     footer: "Workshop Computational Notebooks for Digital Humanities, CHR 2025 - 9 décembre 2025"
     scrollable: TRUE
