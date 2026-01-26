@@ -6,8 +6,8 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.27">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
   <title>JDH TEAM RETREAT</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,8 +27,28 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link rel="stylesheet" href="style.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -198,10 +218,9 @@ Marion Salaün
 
 </section>
 
-<section id="dashboard" class="title-slide slide level1 center">
-<h1>Dashboard</h1>
-
-<img data-src="2026/dashboard.png" class="r-stretch quarto-figure-center"><p class="caption">dashboard</p><ul>
+<section id="dashboard-overview" class="title-slide slide level1 center">
+<h1>Dashboard overview</h1>
+<ul>
 <li>notification</li>
 <li>counters with due date</li>
 <li>KPI
@@ -218,15 +237,20 @@ Marion Salaün
 </ul>
 </section>
 
-<section id="dashboard-1" class="title-slide slide level1 center">
+<section id="dashboard" class="title-slide slide level1 center">
 <h1>Dashboard</h1>
 
-<img data-src="./img/dashboard_article_tablet.png" class="r-stretch quarto-figure-center"><p class="caption">dashboard</p></section>
+<img data-src="./img/dashboard.png" class="r-stretch quarto-figure quarto-figure-center"></section>
+
+<section id="dashboard-tablet" class="title-slide slide level1 center">
+<h1>Dashboard tablet</h1>
+
+<img data-src="./img/dashboard_article_tablet.png" class="r-stretch quarto-figure quarto-figure-center"></section>
 
 <section id="dashboard-mobile" class="title-slide slide level1 center">
 <h1>Dashboard mobile</h1>
 
-<img data-src=".img/dashboard_article_mobile.png" class="r-stretch quarto-figure-center"><p class="caption">dashboard</p></section>
+<img data-src=".img/dashboard_article_mobile.png" class="r-stretch quarto-figure quarto-figure-center"></section>
 
 <section id="call-for-papers-ai-history" class="title-slide slide level1 center">
 <h1>Call for papers : AI &amp; History</h1>
@@ -251,6 +275,13 @@ Marion Salaün
 </ul>
 </section>
 
+<section id="ai-potentials-peer-review" class="title-slide slide level1 center">
+<h1>AI potentials peer review</h1>
+<blockquote>
+<p>More than half of researchers now use AI for peer review — often against guidance see <span class="citation" data-cites="naddaf_more_2025">Naddaf (<a href="#/bibliography" role="doc-biblioref" onclick="">2025</a>)</span></p>
+</blockquote>
+</section>
+
 <section id="lets-do-a-short-break" class="title-slide slide level1 center">
 <h1>Let’s do a short break</h1>
 <p>… we will restart at 11:15 😉</p>
@@ -270,10 +301,15 @@ Marion Salaün
 <p>Where to invest JDH budget 💶 ?</p>
 </section>
 
-<section id="bibliography" class="title-slide slide level1 center">
+<section id="bibliography" class="title-slide slide level1 smaller scrollable">
 <h1>Bibliography</h1>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-naddaf_more_2025" class="csl-entry" role="listitem">
+Naddaf, Miryam. 2025. <span>«&nbsp;More than half of researchers now use <span>AI</span> for peer review — often against guidance&nbsp;»</span>. <em>Nature</em> 649 (8096): 273‑74. <a href="https://doi.org/10.1038/d41586-025-04066-5">https://doi.org/10.1038/d41586-025-04066-5</a>.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
@@ -467,7 +503,7 @@ Marion Salaün
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -579,14 +615,13 @@ Marion Salaün
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
