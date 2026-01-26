@@ -27,7 +27,7 @@ format:
     logo: img/logo-jdh.png
     header-logo: img/logo-jdh.png
 #    hide-from-titleSlide: text
-    footer: "Workshop Computational Notebooks for Digital Humanities, CHR 2025 - 9 décembre 2025"
+    footer: "JDH retreat - 28 january 2025"
     scrollable: TRUE
     smaller: TRUE
     overview: TRUE
@@ -136,4 +136,4 @@ Presentation by Aida
 Where to invest JDH budget 💶 ?
 
 
-
+# Bibliography
