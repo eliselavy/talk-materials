@@ -66,6 +66,13 @@ Let's share our feedback about JDH
 # Bilan 2025
 
 See [here](https://hackmd.io/@Gol_yEahR0aJeDHjZ1CZ-g/H1v1q1vzbe) 
+- Never published so much
+- Frequentation high from January to May => period of the launch of CfP Ai& History
+- Summer holidays
+- Delay in the social campaign => low Frequentation
+- Frequentation external links: DOI / GitHub / Orcid / MyBinder
+![](./img/matomo.png){.r-stretch fig-align="center"}
+
 
 # Dashboard overview
 
@@ -92,7 +99,7 @@ See [here](https://hackmd.io/@Gol_yEahR0aJeDHjZ1CZ-g/H1v1q1vzbe)
 
 # Dashboard mobile
 
-![](.img/dashboard_article_mobile.png){.r-stretch fig-align="center"}
+![](.img/dashboard_article_mobile.png){.r-stretch fig-align="right"}
 
 # Call for papers : AI & History
 
