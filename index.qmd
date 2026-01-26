@@ -99,7 +99,7 @@ See [here](https://hackmd.io/@Gol_yEahR0aJeDHjZ1CZ-g/H1v1q1vzbe)
 
 # Dashboard mobile
 
-![](.img/dashboard_article_mobile.png){.r-stretch fig-align="right"}
+![](.img/dashboard_article_mobile.png){.r-stretch fig-align="right" height=80%}
 
 # Call for papers : AI & History
 
