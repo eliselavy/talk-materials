@@ -67,10 +67,7 @@ Let's share our feedback about JDH
 
 
 
-# Dashboard
-
-![dashboard](2026/dashboard.png)
-
+# Dashboard overview
 
 
 - notification
@@ -87,11 +84,15 @@ Let's share our feedback about JDH
 
 # Dashboard 
 
-![dashboard](./img/dashboard_article_tablet.png){.r-stretch fig-align="center"}
+![](./img/dashboard.png){.r-stretch fig-align="center"}
+
+# Dashboard tablet
+
+![](./img/dashboard_article_tablet.png){.r-stretch fig-align="center"}
 
 # Dashboard mobile
 
-![dashboard](.img/dashboard_article_mobile.png){.r-stretch fig-align="center"}
+![](.img/dashboard_article_mobile.png){.r-stretch fig-align="center"}
 
 
 
@@ -116,6 +117,9 @@ Presentation by Aida
   - reference bibliography
 
 
+# AI potentials peer review
+
+> More than half of researchers now use AI for peer review — often against guidance see @naddaf_more_2025
 
 # Let's do a short break
 
