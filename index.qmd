@@ -49,16 +49,16 @@ engine: markdown
 
 # Review of the year
 
-- bilan 2025
+- 2025 annual review
 - dashboard
-- call for papers : AI & history
+- call for papers
 - harmonization 
 
 ::: notes 
 Frédéric
 :::
 
-# Bilan 2025
+# 2025 annual review
 
 See [here](https://hackmd.io/@Gol_yEahR0aJeDHjZ1CZ-g/H1v1q1vzbe) 
 
@@ -76,12 +76,14 @@ Frédéric
 
 # Dashboard overview
 
+![](./img/dashboard.png){.absolute top=140 right=0 width="700"}
+
 - notification
 - counters with due date
 - KPI
   - pie chart
   - bar chart
-- new abstracts tile
+  - new abstracts tile
 - hypothes.is
 - contact form
 - social media campaign (Facebook and Bluesky)
@@ -92,25 +94,30 @@ Frédéric
 Marion
 :::
 
-# Dashboard 
+::: notes 
+Marion
+:::
 
-![](./img/dashboard.png){.r-stretch fig-align="center"}
+# Tablet & mobile
+
+![](./img/dashboard_article_tablet.png){.absolute top=180 left=0 width="700" }
+![](./img/dashboard_article_mobile.png){.absolute top=180 right=100 width="240"}
 
 ::: notes 
 Marion
 :::
 
-# Dashboard tablet
+# What's next ?
 
-![](./img/dashboard_article_tablet.png){.r-stretch fig-align="center"}
+- new KPIs
+- create OJS submission 
+- author page refactoring
+- create an article from abstract detail page
+- and more... 😃
 
-::: notes 
-Marion
-:::
+![](./img/api.png){.absolute top=180 right=25 width="500" height="200"}
 
-# Dashboard mobile
-
-![](./img/dashboard_article_mobile.png){.r-stretch fig-align="center" height=80%}
+![](./img/author_writing_article.png){.r-stretch fig-align="center"}
 
 ::: notes 
 Marion
@@ -130,8 +137,8 @@ Mirjam
 
 Curvenotes started the project : feedback coming soon.
 
-![](./img/pdf_overview.png){.absolute top=180 left=100 width="400" height="2200" }
-![](./img/pdf_overview_2.png){.absolute top=180 right=100 width="400" height="2200" }
+![](./img/pdf_overview.png){.absolute top=180 left=25 width="500" height="2000"}
+![](./img/pdf_overview_2.png){.absolute top=180 right=25 width="500" height="2000"}
 
 ::: notes 
 Mirjam
@@ -139,12 +146,11 @@ Mirjam
 
 # Call for papers
 
-**AI & History** : Presentation by Frederic
-
-![](./img/KPI_cfp.png){.r-stretch fig-align="center"}
-
-- Dashboard [here](https://journalofdigitalhistory.org/dashboard)
+- **AI & History** : presentation by Frédéric ([dashboard](https://journalofdigitalhistory.org/dashboard))
 - **Early Modern English Manuscripts and Their Metadata at Scale** (Caitlin Burge, Kyle Dase, and Erin A. McCarthy -- In preparation)
+
+![](./img/KPI_cfp_abstracts.png){.absolute top=300 left=0 width="500"}
+![](./img/KPI_cfp.png){.absolute top=300 right=0 width="500"}
 
 ::: notes 
 Frédéric
@@ -160,9 +166,6 @@ Aida
 
 # Future ideas
 
-- Exploring guideline with AI
-- Technical review / peer review
-
 ::: notes 
 Marion
 :::
@@ -171,7 +174,7 @@ Marion
 
 ![](./img/guidelines.png){.r-stretch fig-align="center"}
 
-Demotime with [Devin](https://deepwiki.com/pkp/ojs/4.1-submission-process)
+Demo with [Devin](https://deepwiki.com/pkp/ojs/4.1-submission-process)
 
 ::: notes 
 Marion
@@ -187,9 +190,9 @@ Marion
 |-----------------------|-------------------|----------------------|
 | General comments       | ✅                 | ✅                    |
 | Content                | ❌                 | ✅                    |
-| Structure and argument | ❌                 | ✅ plus-value         |
+| Structure and argument | ❌                 | ✅ added value         |
 | Figures / tables       | ?                  | ✅ Aida framework     |
-| Code                   | ✅                 | ❌ not in practise    |
+| Code                   | ✅                 | ❌ not in practice    |
 | Language               | ✅                 | ❌                    |
 | Ethical approval       | ❌                 | ✅                    |
 | Data / primary sources  | ✅                | ❌                    |
@@ -275,7 +278,7 @@ Mirjam & all the team
 
 > Academic publishing now shows the same decline that has hit social media and online marketplaces. @rhodes_5_2026
 
-Planning our next steps 💡 💩
+Planning our next steps 💡
 
 ::: notes 
 Mirjam & all the team
