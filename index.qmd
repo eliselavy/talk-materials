@@ -49,35 +49,31 @@ engine: markdown
 
 # Review of the year
 
-- round table
-- 2025 Bilan
+- bilan 2025
 - dashboard
 - call for papers : AI & history
-- mobile version
+- harmonization 
 
-
-
-# Round table
-
-Let's share our feedback about JDH
-
-
+::: notes 
+Frédéric
+:::
 
 # Bilan 2025
 
 See [here](https://hackmd.io/@Gol_yEahR0aJeDHjZ1CZ-g/H1v1q1vzbe) 
 
-- Never published so much
-- Frequentation high from January to May => period of the launch of CfP Ai& History
-- Summer holidays
-- Delay in the social campaign => low Frequentation
+- Published the most ever
+- Frequentation high from January to May → period of the launch of CFP AI& History
+- Frequentation linked to social media campaign and workshop
 - Frequentation external links: DOI / GitHub / Orcid / MyBinder
 
-![](./img/matomo.png){.r-stretch fig-align="center"}
+![](./img/articles_published.png){.r-stretch fig-align="center"}
 
+::: notes 
+Frédéric
+:::
 
 # Dashboard overview
-
 
 - notification
 - counters with due date
@@ -91,61 +87,198 @@ See [here](https://hackmd.io/@Gol_yEahR0aJeDHjZ1CZ-g/H1v1q1vzbe)
 - responsive table
 - log in/log out menu in the right top corner
 
+::: notes 
+Marion
+:::
+
 # Dashboard 
 
 ![](./img/dashboard.png){.r-stretch fig-align="center"}
+
+::: notes 
+Marion
+:::
 
 # Dashboard tablet
 
 ![](./img/dashboard_article_tablet.png){.r-stretch fig-align="center"}
 
+::: notes 
+Marion
+:::
+
 # Dashboard mobile
 
-![](./img/dashboard_article_mobile.png){.r-stretch fig-align="right" height=80%}
+![](./img/dashboard_article_mobile.png){.r-stretch fig-align="center" height=80%}
 
-# Call for papers : AI & History
+::: notes 
+Marion
+:::
 
-Presentation by Frederic
+# Harmonization 
 
-# Framework visualisation
+In progress 
+
+![](./img/mobile.png){.r-stretch fig-align="center"}
+
+::: notes 
+Mirjam
+:::
+
+# PDF
+
+Curvenotes started the project : feedback coming soon.
+
+![](./img/pdf_overview.png){.absolute top=180 left=100 width="400" height="2200" }
+![](./img/pdf_overview_2.png){.absolute top=180 right=100 width="400" height="2200" }
+
+::: notes 
+Mirjam
+:::
+
+# Call for papers
+
+**AI & History** : Presentation by Frederic
+
+![](./img/KPI_cfp.png){.r-stretch fig-align="center"}
+
+- Dashboard [here](https://journalofdigitalhistory.org/dashboard)
+- **Early Modern English Manuscripts and Their Metadata at Scale** (Caitlin Burge, Kyle Dase, and Erin A. McCarthy -- In preparation)
+
+::: notes 
+Frédéric
+:::
+
+# Visualisation framework
 
 Presentation by Aida
 
-# AI potentials
+::: notes 
+Aida
+:::
 
-- Guideline, workflow...
-- Technical review, peer review
-- Improving reading experience
-  - thematic cluster
-  - reference bibliography
+# Future ideas
 
+- Exploring guideline with AI
+- Technical review / peer review
 
-# AI potentials peer review
+::: notes 
+Marion
+:::
+
+# AI exploration guideline
+
+![](./img/guidelines.png){.r-stretch fig-align="center"}
+
+Demotime with [Devin](https://deepwiki.com/pkp/ojs/4.1-submission-process)
+
+::: notes 
+Marion
+:::
+
+# AI in peer review
 
 > More than half of researchers now use AI for peer review — often against guidance see @naddaf_more_2025
 
-# AI / Human
+# AI vs Human
 
-|       | General comments | Content | Structure and argument | Figures / tables | Code              | Language | Ethical approval | Data / primary sources availability |
-|-------|------------------|---------|------------------------|------------------|-------------------|----------|------------------|-------------------------------------|
-| AI    | ✅                                              | ❌       | ❌                      | ?                | ✅                 | ✅        | ❌                | ✅                                   |
-| Human | ✅                                              | ✅       | ✅ plus-value           | ✅ Aida framework | ❌ not in practise | ❌        | ✅                | ❌                                   |
+|                       | AI                | Human                |
+|-----------------------|-------------------|----------------------|
+| General comments       | ✅                 | ✅                    |
+| Content                | ❌                 | ✅                    |
+| Structure and argument | ❌                 | ✅ plus-value         |
+| Figures / tables       | ?                  | ✅ Aida framework     |
+| Code                   | ✅                 | ❌ not in practise    |
+| Language               | ✅                 | ❌                    |
+| Ethical approval       | ❌                 | ✅                    |
+| Data / primary sources  | ✅                | ❌                    |
 
-# Let's do a short break
+: AI vs Human in peer review 
 
-... we will restart at 11:15 😉
+::: notes 
+Elisabeth 
+:::
 
+# Timeline article
+
+![](./img/timeline_article.png){.r-stretch fig-align="center"}
+
+::: notes 
+Mirjam
+:::
+
+# Entry points
+
+- Thematic cluster of the articles
+- Reference bibliography cluster
+
+![](./img/entry_points.png){.r-stretch fig-align="center"}
+
+::: notes 
+Mirjam
+:::
+
+# Author info box
+
+::: notes 
+Mirjam
+:::
+
+![](./img/author_info_box.png){.r-stretch fig-align="center"}
+
+# Storytelling
+
+Video teaser
+
+::: notes 
+Mirjam
+:::
+
+![](./img/storytelling.png){.r-stretch fig-align="center"}
 
 # Archiving of the JDH
 
-- Inserting the JDH into a solid open source framework
+- Inserting the JDH into a solid open science framework
 - Formalising the JDH’s editorial policy into an explicit open data / open science framework
-- Discussion with the BnL
+- Discussion with Bibliothèque Nationale du Luxembourg (BnL)
+
+::: notes 
+Fréderic and Elisabeth
+:::
+
+# Let's do a short break
+
+... we will restart later 😉
+
+::: notes 
+Fréderic and Elisabeth
+:::
+
+# Let's prioritize 💫
+
+- visualisation framework
+- AI for guidelines 
+- AI in peer review
+- article timeline
+- entry points
+- author info box
+- storytelling: video teaser
+- open science framework (archiving)
 
 
-# Planning the next steps
+::: notes 
+Mirjam & all the team
+:::
 
-Where to invest JDH budget 💶 ?
+# What will be our core beliefs ?
 
+> Academic publishing now shows the same decline that has hit social media and online marketplaces. @rhodes_5_2026
+
+Planning our next steps 💡 💩
+
+::: notes 
+Mirjam & all the team
+:::
 
 # Bibliography
+

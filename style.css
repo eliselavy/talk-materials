@@ -104,3 +104,8 @@ width:50%;
   line-height: 0.1;
 }
 
+/* Override Reveal.js default max-height for images */
+.reveal img {
+  max-height: 300%;
+}
+
