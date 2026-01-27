@@ -1,5 +1,5 @@
 /.quarto/
 /_site/
 /_freeze/
-index.html
+/docs/
 **/*.quarto_ipynb
