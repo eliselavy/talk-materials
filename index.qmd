@@ -184,6 +184,14 @@ Marion
 
 > More than half of researchers now use AI for peer review — often against guidance see @naddaf_more_2025
 
+::: notes 
+Elisabeth
+On this 50% :
+29% to summarize the manuscript
+identify gaps or check references
+28% to flag potential signs of plagiarism and image duplication 
+:::
+
 # AI vs Human
 
 |                       | AI                | Human                |
@@ -200,7 +208,14 @@ Marion
 : AI vs Human in peer review 
 
 ::: notes 
-Elisabeth 
+Elisabeth
+experiment to test whether the LLM could review a Nature Communications paper
+compared the AI-generated output with the actual peer-review reports
+conclusion:  mimic the structure of a peer-review report and use polished language
+but that it failed to produce constructive feedback
+- already solution Frontiers piloted an in-house AI tool 
+summarizing a manuscript or checking whether the research fits the journal’s scope
+- some researchers are running their own tests to determine how well AI models support peer review
 :::
 
 # Timeline article
@@ -248,6 +263,56 @@ Mirjam
 
 ::: notes 
 Fréderic and Elisabeth
+:::
+
+# Explicit open data / open science framework
+
+Based on the Foster Taxonomy see @koulocheri_what_2017
+![](./img/openscience.png){.r-stretch fig-align="center" width="95%"} 
+
+::: notes 
+Between creative freedom and formal standards: where JDH's three-layer practice meets Open Science requirements
+:::
+
+
+# Reproduciblity
+
+Metadata:
+- Partially
+- Fully
+- None
+
+![](./img/reproducibility_distribution.png){.r-stretch fig-align="center" width="50%"} 
+
+# Example of practise: Data
+
+- external repo - zenodo
+- inside [github](https://github.com/jdh-observer/jdh001-L2gBr3BzwH8Z/tree/main/data)
+-  MIA-Euronews Corpus, preserved in the MIA Database of the Medici Archive
+- [available in the paper url](https://journalofdigitalhistory.org/en/article/7XSDVCtnbXva?idx=36) from Internet archive 
+- 3D mesh
+- oral interview
+- catalogue image with metadata
+
+# Using data accessibility statement
+
+See @colavizza_citation_2020
+
+- DAS 1: “Data available on request or similar”
+- DAS 2: “Data available with the paper and its supplementary files”
+- DAS 3: “Data available in a repository”
+
+
+# Ideas
+
+- Enrich metadata
+- Reveal in the interface
+
+
+![](./img/PKP_PFL.png){.r-stretch fig-align="right" width="50%"}
+
+::: notes 
+
 :::
 
 # Let's do a short break
