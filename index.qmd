@@ -1,18 +1,12 @@
 ---
-title: "JDH TEAM RETREAT"
-subtitle: "Plan for the future year"
+title: "Automatisation de la diffusion sur les réseaux sociaux pour une revue, exemple du JDH"
+subtitle: "Revue 3.0 workshop"
 authors: 
   - name: Frédéric Clavert
     orcid: 0000-0002-0237-2532
     affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Elisabeth Guerard
     orcid: 0000-0001-7742-4141
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
-  - name: Mirjam Pfeiffer
-    orcid: 0009-0005-2265-5926
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
-  - name: Aida Horaniet Ibañez
-    orcid: 0000-0003-1346-8449
     affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Marion Salaün
     affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
@@ -27,7 +21,7 @@ format:
     logo: img/logo-jdh.png
     header-logo: img/logo-jdh.png
 #    hide-from-titleSlide: text
-    footer: "JDH retreat - 28 january 2025"
+    footer: "Revue 3.0 - 7 mai 2026"
     scrollable: TRUE
     smaller: TRUE
     overview: TRUE
@@ -47,307 +41,190 @@ format:
 engine: markdown
 ---
 
-# Review of the year
+# Plan
 
-- 2025 annual review
-- dashboard
-- call for papers
-- harmonization 
-
-::: notes 
-Frédéric
-:::
-
-# 2025 annual review
-
-See [here](https://hackmd.io/@Gol_yEahR0aJeDHjZ1CZ-g/H1v1q1vzbe) 
-
-- Published the most ever
-- Frequentation high from January to May → period of the launch of CFP AI& History
-- Frequentation linked to social media campaign and workshop
-
-- Frequentation external links: DOI / GitHub / Orcid / MyBinder
-
-![](./img/articles_published.png){.r-stretch fig-align="center"}
-
-::: notes 
-Frédéric
-:::
-
-# Dashboard overview
-
-![](./img/dashboard.png){.absolute top=140 right=0 width="700"}
-
-- notification
-- counters with due date
-- KPI
-  - pie chart
-  - bar chart
-  - new abstracts tile
-- hypothes.is
-- contact form
-- social media campaign (Facebook and Bluesky)
-- responsive table
-- log in/log out menu in the right top corner
+- Qu'est-ce que le JDH ?
+- Problème initial ...
+- ... et ceux qui s'ensuivent
+- Comment cela fonctionne ?
+- Qui écrit ? L'auteur ou l'éditeur ? 
 
 ::: notes 
 Marion
 :::
 
-::: notes 
-Marion
-:::
+# Qu'est-ce que le JDH ? 
 
-# Tablet & mobile
+Journal of Digital History (JDH)
 
-![](./img/dashboard_article_tablet.png){.absolute top=180 left=0 width="700" }
-![](./img/dashboard_article_mobile.png){.absolute top=180 right=100 width="240"}
+Journal académique en ligne basé sur le principe de plusieurs niveau de lecture pour chaque article (narratif, herméneutique, code et données).
+Le journal est en accès libre et n'engendre aucun coût que ce soit pour les auteurs ou pour les lecteurs. 
 
-::: notes 
-Marion
-:::
+Lien : [https://journalofdigitalhistory.org/](https://journalofdigitalhistory.org/) 
 
-# What's next ?
+En association avec la maison d'édition De Gruyter Brill.
 
-- new KPIs
-- create OJS submission 
-- author page refactoring
-- create an article from abstract detail page
-- and more... 😃
-
-![](./img/api.png){.absolute top=180 right=25 width="500" height="200"}
-
-![](./img/author_writing_article.png){.r-stretch fig-align="center"}
+**Nouveau numéro** : IA et Histoire
 
 ::: notes 
 Marion
 :::
 
-# Harmonization 
+# 
 
-In progress 
-
-![](./img/mobile.png){.r-stretch fig-align="center"}
-
-::: notes 
-Mirjam
-:::
-
-# PDF
-
-Curvenotes started the project : feedback coming soon.
-
-![](./img/pdf_overview.png){.absolute top=180 left=25 width="500" height="2000"}
-![](./img/pdf_overview_2.png){.absolute top=180 right=25 width="500" height="2000"}
-
-::: notes 
-Mirjam
-:::
-
-# Call for papers
-
-- **AI & History** : presentation by Frédéric ([dashboard](https://journalofdigitalhistory.org/dashboard))
-- **Early Modern English Manuscripts and Their Metadata at Scale** (Caitlin Burge, Kyle Dase, and Erin A. McCarthy -- In preparation)
-
-![](./img/KPI_cfp_abstracts.png){.absolute top=300 left=0 width="500"}
-![](./img/KPI_cfp.png){.absolute top=300 right=0 width="500"}
-
-::: notes 
-Frédéric
-:::
-
-# Visualisation framework
-
-Presentation by Aida
-
-::: notes 
-Aida
-:::
-
-# Future ideas
+![](./img/07_05_26/JDH_exemple_article.png)
 
 ::: notes 
 Marion
 :::
 
-# AI exploration guideline
+#
 
-![](./img/guidelines.png){.r-stretch fig-align="center"}
-
-Demo with [Devin](https://deepwiki.com/pkp/ojs/4.1-submission-process)
+![](./img/07_05_26/JDH_exemple_code_article.png)
 
 ::: notes 
 Marion
 :::
 
-# AI in peer review
+# Gestion d'un journal
 
-> More than half of researchers now use AI for peer review — often against guidance see @naddaf_more_2025
+- gérer les soumissions : accepter, décliner, etc...
+- contacter les auteurs régulièrement
+- réaliser des revues techniques de leur travail (débugger le code, vérifier que les packages soient bien installés etc...)
+- corriger les erreurs de frappes, orthographe, etc..
+- vérifier la mise en page
+- etc... x10 000
+
+# Flux
+
+🎨 Lien [Figma](https://www.figma.com/board/qSfyxRc0vBFFihmLDjsJm4/JDH-submission-process?node-id=0-1&p=f&t=JG1Q03iGhjN3EPC8-0)
+
+![](./img/07_05_26/JDH_flux.png)
+
+... et c'est loin d'être exhaustif !
 
 ::: notes 
-Elisabeth
-On this 50% :
-29% to summarize the manuscript
-identify gaps or check references
-28% to flag potential signs of plagiarism and image duplication 
+Marion
 :::
 
-# AI vs Human
+# Solution ? 
 
-|                       | AI                | Human                |
+![](./img/07_05_26/dashboard_gif.png)
+
+::: notes 
+Marion
+:::
+
+# Dashboard
+
+![](./img/07_05_26/JDH_dashboard.png)
+
+::: notes 
+Marion
+:::
+
+# Rappel : le flux
+
+Pour cette fois-ci, essayons de focus sur un point précis ...
+
+![](./img/07_05_26/JDH_flux.png)
+
+# 
+
+... les réseaux sociaux.
+
+![](./img/07_05_26/JDH_flux_social_media.png)
+
+# Dans le dashboard
+
+[Intégrer une vidéo de démo de la planification des réseaux sociaux ici]
+
+::: notes 
+Marion
+:::
+
+# Problèmes rencontrés
+
+
+|                       | Facebook               | Bluesky             |
 |-----------------------|-------------------|----------------------|
-| General comments       | ✅                 | ✅                    |
-| Content                | ❌                 | ✅                    |
-| Structure and argument | ❌                 | ✅ added value         |
-| Figures / tables       | ?                  | ✅ Aida framework     |
-| Code                   | ✅                 | ❌ not in practice    |
-| Language               | ✅                 | ❌                    |
-| Ethical approval       | ❌                 | ✅                    |
-| Data / primary sources  | ✅                | ❌                    |
+| Nombre de publication/réponse                 | une publication unique               | une publication et jusqu'à 5 réponses   |
+| Nombre de mots               | 63,206          | 300   |
+| Qualité de la documentation  |   ❌                | ✅                    |
+| Créer un compte    | ❌  Accepter de se faire prendre en photo             | ✅ Simple                  |
+| Tester    |   ❌                | ✅                    |
+| Token pour l'API             | Difficile à obtenir               | ✅                    |
+| Administrateur | ❌ lié au compte utilisateur               | ✅     |
+| Stockage du post dans l'API       | ✅                   | ❌   |
 
-: AI vs Human in peer review 
+# Un exemple de parcours du combattant 
 
-::: notes 
-Elisabeth
-experiment to test whether the LLM could review a Nature Communications paper
-compared the AI-generated output with the actual peer-review reports
-conclusion:  mimic the structure of a peer-review report and use polished language
-but that it failed to produce constructive feedback
-- already solution Frontiers piloted an in-house AI tool 
-summarizing a manuscript or checking whether the research fits the journal’s scope
-- some researchers are running their own tests to determine how well AI models support peer review
-:::
+Pour obtenir un token qui a une durée illimitée avec Facebook, il vous faudra : 
 
-# Timeline article
+1. Un `long-lived user access token` (dure 60 jours) avec la requête suivante
 
-![](./img/timeline_article.png){.r-stretch fig-align="center"}
+````
+curl -i -X GET "https://graph.facebook.com/{graph-api-version}/oauth/access_token?       
+  grant_type=fb_exchange_token&               
+  client_id={app-id}&     
+  client_secret={app-secret}&     
+  fb_exchange_token={your-access-token}"
+````
 
-::: notes 
-Mirjam
-:::
+2. Il faut récupérer l'`app-id`
+3. L'`app-secret`
+4. Puis générer l'`access-token` 
 
-# Entry points
+#
 
-- Thematic cluster of the articles
-- Reference bibliography cluster
+5. Une fois que l'on a récupérer tout ça, on doit récupérer un `long-lived page access token`
+6. Il faudra pour ce faire... récupérer la `graph-api version`
+7. Puis le `app-scoped-user-id`
+8. Et réutiliser le `long-lived user access token` obtenu à l'étape 5 🤪
 
-![](./img/entry_points.png){.r-stretch fig-align="center"}
+![](./img/07_05_26/JDH_facebook_meta_token.png)
 
-::: notes 
-Mirjam
-:::
+# ... et puis il faut aussi "plannifier"
 
-# Author info box
+... donc gérer **une heure** de planification avec un `scheduler`.
 
-::: notes 
-Mirjam
-:::
-
-![](./img/author_info_box.png){.r-stretch fig-align="center"}
-
-# Storytelling
-
-Video teaser
-
-::: notes 
-Mirjam
-:::
-
-![](./img/storytelling.png){.r-stretch fig-align="center"}
-
-# Archiving of the JDH
-
-- Inserting the JDH into a solid open science framework
-- Formalising the JDH’s editorial policy into an explicit open data / open science framework
-- Discussion with Bibliothèque Nationale du Luxembourg (BnL)
-
-::: notes 
-Fréderic and Elisabeth
-:::
-
-# Explicit open data / open science framework
-
-Based on the Foster Taxonomy see @koulocheri_what_2017
-![](./img/openscience.png){.r-stretch fig-align="center" width="95%"} 
-
-::: notes 
-Between creative freedom and formal standards: where JDH's three-layer practice meets Open Science requirements
-:::
+[schéma mignon de comment ça marche avec bluesky]
 
 
-# Reproduciblity
+# Mais si c'est aussi complexe, pourquoi automatiser ? 
 
-Metadata:
-- Partially
-- Fully
-- None
+# ... parce que automatiser amène aussi des avantages
 
-![](./img/reproducibility_distribution.png){.r-stretch fig-align="center" width="50%"} 
+#
 
-# Example of practise: Data
+- risque d'oubli sur le "comment faire" par l'humain car on ne publie pas tous les jours
+- vérification systématique si tous les fichiers sont présents (`tweet.md`, `socialmediacover.png`)
+- libère du temps pour d'autre tâche(s) : aider les auteurs par exemple
+- permet d'investir la possibilité de **répliquer** sur d'autres réseaux sociaux (Linkedin, Mastodon, Threads...)
 
-- external repo - zenodo
-- inside [github](https://github.com/jdh-observer/jdh001-L2gBr3BzwH8Z/tree/main/data)
--  MIA-Euronews Corpus, preserved in the MIA Database of the Medici Archive
-- [available in the paper url](https://journalofdigitalhistory.org/en/article/7XSDVCtnbXva?idx=36) from Internet archive 
-- 3D mesh
-- oral interview
-- catalogue image with metadata
+mais surtout...
 
-# Using data accessibility statement
+# 
 
-See @colavizza_citation_2020
+Apprentissage de nouvel compétence (code, vision d'ensemble des étapes) que ce soit par l'équipe mais aussi par nos étudiants.
 
-- DAS 1: “Data available on request or similar”
-- DAS 2: “Data available with the paper and its supplementary files”
-- DAS 3: “Data available in a repository”
+> « Quand un homme a faim, mieux vaut lui apprendre à pêcher que de lui donner un poisson. » par Confucius (@bouffard_chapitre_2011) 
 
+![Filet de pêche traditionnel chinois près de Kochi, dans le Kérala (Inde). Creative Commons Attribution ShareAlike 3.0. @rosbach_english_2008](./img/07_05_26/Kochi_chinese_fishing-net.jpg "Title:  Filet de pêche traditionnel chinois près de Kochi, dans le Kérala (Inde).")
 
-# Ideas
+# 
 
-- Enrich metadata
-- Reveal in the interface
+En programmation, on ne réinvente pas la roue à chaque fois.
 
+![](./img/07_05_26/node_modules_heaviest.png){.lightbox}
 
-![](./img/PKP_PFL.png){.r-stretch fig-align="right" width="50%"}
+# Piste d'amélioration pour la suite ?
 
-::: notes 
+`Tweet.md` qui l'écrit ?
 
-:::
-
-# Let's do a short break
-
-... we will restart later 😉
-
-::: notes 
-Fréderic and Elisabeth
-:::
-
-# Let's prioritize 💫
-
-- visualisation framework
-- AI for guidelines 
-- AI in peer review
-- article timeline
-- entry points
-- author info box
-- storytelling: video teaser
-- open science framework (archiving)
-
-
-::: notes 
-Mirjam & all the team
-:::
-
-# What will be our core beliefs ?
-
-> Academic publishing now shows the same decline that has hit social media and online marketplaces. @rhodes_5_2026
-
-Planning our next steps 💡
-
-::: notes 
-Mirjam & all the team
-:::
+- l'auteur ? à tendance à l 'oublier
+- l'éditeur ? ne connaît pas aussi bien l'article que l'auteur 
+- l'IA ? mais dans ce cas doit impérativement être relu par quelqu'un et probablemet recorriger
 
 # Bibliography
 
