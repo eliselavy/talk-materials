@@ -8,7 +8,7 @@ You can run the following command lines in the terminal at the root of the repos
 
 `quarto render && quarto preview`
 
-And then it should automatically open and update automatically in your default browser on following http://localhost:5077.
+And then it should automatically open and update automatically in your default browser on following on localhost (check in terminal).
 
 # To modify the quarto presentation
 

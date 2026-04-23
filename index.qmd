@@ -1,6 +1,6 @@
 ---
 title: "Automatisation de la diffusion sur les réseaux sociaux pour une revue, exemple du JDH"
-subtitle: "Revue 3.0 workshop"
+subtitle: "Atelier de la Revue 3.0"
 authors: 
   - name: Frédéric Clavert
     orcid: 0000-0002-0237-2532
@@ -45,7 +45,7 @@ engine: markdown
 
 - Qu'est-ce que le JDH ?
 - Gestion d'un journal
-- Les réseaux sociaux dans le dashboard
+- Les réseaux sociaux 
 - Les problèmes rencontrés
 - La plannification
 - Pourquoi automatiser ? 
@@ -63,7 +63,7 @@ Journal of Digital History (JDH)
 Journal académique en ligne basé sur le principe de plusieurs niveau de lecture pour chaque article (narratif, herméneutique, code et données).
 Le journal est en accès libre et n'engendre aucun coût que ce soit pour les auteurs ou pour les lecteurs. 
 
-Lien : [https://journalofdigitalhistory.org/](https://journalofdigitalhistory.org/) 
+Lien : [https://journalofdigitalhistory.org/](https://journalofdigitalhistory.org/)
 
 En association avec la maison d'édition De Gruyter Brill.
 
@@ -138,13 +138,24 @@ Pour cette fois-ci, essayons de focus sur un point précis ...
 
 ![](./img/07_05_26/JDH_flux_social_media.png)
 
-#Les réseaux sociaux dans le Dashboard
+# 
 
-[Intégrer une vidéo de démo de la planification des réseaux sociaux ici]
+{{< video ./img/07_05_26/social_media_campaign.mov>}}
 
 ::: notes 
 Marion
 :::
+
+# Résultat
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./img/07_05_26/bluesky_result_1.png)
+:::
+::: {.column width="50%"}
+![](./img/07_05_26/bluesky_result_2.png)
+:::
+::::
 
 # Problèmes rencontrés
 
@@ -152,7 +163,7 @@ Marion
 |                       | Facebook               | Bluesky             |
 |-----------------------|-------------------|----------------------|
 | Nombre de publication/réponse                 | une publication unique               | une publication et jusqu'à 5 réponses   |
-| Nombre de mots               | 63,206          | 300   |
+| Nombre de mots               | 63 206          | 300   |
 | Qualité de la documentation  |   ❌                | ✅                    |
 | Créer un compte    | ❌  Accepter de se faire prendre en photo             | ✅ Simple                  |
 | Tester    |   ❌                | ✅                    |
@@ -193,10 +204,10 @@ Et puis, il faut planifier donc gérer **une heure** de planification avec un `s
 
 :::: {.columns}
 ::: {.column width="50%"}
-![](./img/07_05_26/bluesky_simplify.svg){height="700px"}
+![](./img/07_05_26/bluesky_simplify.svg){height="650px"}
 :::
 ::: {.column width="50%"}
-![](./img/07_05_26/bluesky_super_simplify.png){height="700px"}
+![](./img/07_05_26/bluesky_super_simplify.png){height="650px"}
 :::
 ::::
 
@@ -220,7 +231,7 @@ Apprentissage de nouvel compétence (code, vision d'ensemble des étapes) que ce
 
 En programmation, on ne réinvente pas la roue à chaque fois.
 
-![](./img/07_05_26/node_modules_heaviest.png){.lightbox}
+![](./img/07_05_26/node_modules_heaviest.png){.lightbox height="600px"}
 
 # À qui de communiquer ?
 
@@ -236,6 +247,15 @@ En programmation, on ne réinvente pas la roue à chaque fois.
 
 ![Filet de pêche traditionnel chinois près de Kochi, dans le Kérala (Inde). Creative Commons Attribution ShareAlike 3.0. @rosbach_english_2008](./img/07_05_26/Kochi_chinese_fishing-net.jpg "Title:  Filet de pêche traditionnel chinois près de Kochi, dans le Kérala (Inde).")
 
+# Bluesky 
+
+![](./img/07_05_26/BE_bluesky.svg)
+
+# Facebook
+
+![](./img/07_05_26/BE_facebook.svg)
 
 # Bibliography
+
+
 
