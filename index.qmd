@@ -249,19 +249,21 @@ En programmation, **on ne réinvente pas la roue à chaque fois**.
 
 ![](./img/07_05_26/DORA.png)
 
-# Retour d'expérience
+# Un goulot d'étranglement inattendu : la production du Tweet.md
 
-`Tweet.md` qui l'écrit ?
+- l'auteur ? Soit trop tôt - soit tard - manque de culture de promotion / culture médias sociaux
+- l'éditeur ? Moins bien placé pour synthétiser le contenu de l'article
+- l'IA ? Solution envisageable, mais redondante : nécessite une relecture humaine systématique... par l'auteur qui a déjà écrit l'article
 
-- l'auteur ? à tendance à l 'oublier
-- l'éditeur ? ne connaît pas aussi bien l'article que l'auteur 
-- l'IA ? mais dans ce cas doit impérativement être relu par quelqu'un et probablement recorriger
+# Vers une nouvelle culture de la publication ? 
 
-# Conclusion
+- Faut-il former les auteurs à écrire court ?
+- Quel réseau choisir selon le public et la discipline ?
+- Saucissoner l'abstract cf. https://social.sciences.re/@RevueHN
+- Une pratique en devenir 
 
-> « Quand un homme a faim, mieux vaut lui apprendre à pêcher que de lui donner un poisson. » par Confucius (@bouffard_chapitre_2011) 
+![](./img/JODH_vibes_dataset.png)
 
-![Filet de pêche traditionnel chinois près de Kochi, dans le Kérala (Inde). Creative Commons Attribution ShareAlike 3.0. @rosbach_english_2008](./img/07_05_26/Kochi_chinese_fishing-net.jpg "Title:  Filet de pêche traditionnel chinois près de Kochi, dans le Kérala (Inde).")
 
 # Bluesky 
 
