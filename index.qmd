@@ -259,10 +259,9 @@ En programmation, **on ne réinvente pas la roue à chaque fois**.
 
 - Faut-il former les auteurs à écrire court ?
 - Quel réseau choisir selon le public et la discipline ?
-- Saucissoner l'abstract cf. https://social.sciences.re/@RevueHN
+- Saucissoner l'abstract cf. [RevueHN](https://social.sciences.re/@RevueHN)
 - Une pratique en devenir 
-
-![](./img/JODH_vibes_dataset.png)
+![](./img/07_05_26/JODH_vibes_dataset.png)
 
 
 # Bluesky 
