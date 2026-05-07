@@ -237,6 +237,18 @@ En programmation, **on ne réinvente pas la roue à chaque fois**.
 
 ![](./img/07_05_26/node_modules_heaviest.png){.lightbox height="600px"}
 
+# 
+
+... le développeur **"aime" l'automatisation**
+
+- les tests et déploiement en production sont souvent automatisés
+- identifier les éléments à automatiser
+- utiliser de la visualisation comme un dashboard pour mieux gérer son travail (@noauthor_dora_nodate)
+
+> "Computers perform repetitive tasks; people solve problems." (@forsgren_accelerate_2018)
+
+![](./img/07_05_26/DORA.png)
+
 # Retour d'expérience
 
 `Tweet.md` qui l'écrit ?
