@@ -249,7 +249,7 @@ En programmation, **on ne réinvente pas la roue à chaque fois**.
 
 ![](./img/07_05_26/DORA.png)
 
-# Un goulot d'étranglement inattendu : la production du Tweet.md
+# Un goulot d'étranglement inattendu
 
 - l'auteur ? Soit trop tôt - soit tard - manque de culture de promotion / culture médias sociaux
 - l'éditeur ? Moins bien placé pour synthétiser le contenu de l'article
@@ -261,6 +261,7 @@ En programmation, **on ne réinvente pas la roue à chaque fois**.
 - Quel réseau choisir selon le public et la discipline ?
 - Saucissoner l'abstract cf. [RevueHN](https://social.sciences.re/@RevueHN)
 - Une pratique en devenir 
+
 ![](./img/07_05_26/JODH_vibes_dataset.png)
 
 
