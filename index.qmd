@@ -28,7 +28,7 @@ format:
     logo: img/logo-jdh.png
     header-logo: img/logo-jdh.png
 #   hide-from-titleSlide: text
-    footer: "Revue 3.0 - 7 mai 2026"
+    footer: "AI through History, History through AI - Tuesday 16th june 2026"
     scrollable: TRUE
     smaller: TRUE
     overview: TRUE
@@ -79,12 +79,111 @@ Frédéric
 
 # Evidence RAG
 
-........
-We need to add some visualisations
+1. Infrastructure : Grid5000 or local model
+2. Pipeline
+3. JDH evidence audit application
+4. Results
+
+# Infrastructure
+
+:::: {.columns}
+::: {.column width="50%"}
+**Grid5000** is a large scale and flexible testbed for experiment-driven research in all areas of computer science.
+:::
+::: {.column width="50%"}
+![](./img/16_06_26/grid5000.png)
+:::
+::::
+
+# 
+
+![](./img/16_06_26/pipeline.png){fig-align="center"}
+
+# JDH evidence audit app
+
+![](./img/16_06_26/JDH_evidence_audit_app_1.png)
+
+#
+
+![](./img/16_06_26/JDH_evidence_audit_app_2.png)
+
+#
+
+![](./img/16_06_26/JDH_evidence_audit_app_3.png)
+
+#
+
+![](./img/16_06_26/JDH_evidence_audit_app_4.png)
+![](./img/16_06_26/JDH_evidence_audit_app_5.png)
+
+
+# Results
+
+#
+
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./img/16_06_26/output.png){}
+:::
+::: {.column width="50%"}
+- text placeholder
+- text placeholder
+- text placeholder
+- text placeholder
+:::
+::::
+
 
 ::: notes 
-Mehrdad + Marion
+Mehrdad
 :::
+
+# 
+
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./img/16_06_26/output1.png){}
+:::
+::: {.column width="50%"}
+- text placeholder
+- text placeholder
+- text placeholder
+- text placeholder
+:::
+::::
+
+# 
+
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./img/16_06_26/output2.png){}
+:::
+::: {.column width="50%"}
+- text placeholder
+- text placeholder
+- text placeholder
+- text placeholder
+:::
+::::
+
+# 
+
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./img/16_06_26/output3.png){}
+:::
+::: {.column width="50%"}
+- text placeholder
+- text placeholder
+- text placeholder
+- text placeholder
+:::
+::::
+
 
 # What should be future steps ?
 
@@ -95,7 +194,9 @@ Mehrdad + Marion
 
 # Proof of Concept (POC)
 
-.....
+#
+
+![](./img/16_06_26/POC_review.png){fig-align="center"}
 
 :::notes
 :::
