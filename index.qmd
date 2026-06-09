@@ -70,12 +70,25 @@ Frédéric
 
 # Challenges about peer review
 
-.......
-
+- Editorial decisions might rely on subjective interpretation of reviewer comments.
+- Review processing is time-consuming.
+- Important evidence can be overlooked when papers are long and complex.
+- Limited transparency makes it difficult to justify editorial decisions, see @martinboyle2026papertrail.
+- Manual review processes are difficult to scale as submission volumes increase, see @sen2025rigor. 
 
 ::: notes 
 Frédéric
 :::
+
+# Advantages of our work for peer review
+
+- Supports editors by linking reviewer comments to paper evidence.
+- Makes peer review decisions more transparent and explainable.
+- Reduces manual effort in checking whether comments are supported.
+- Combines RAG retrieval with model-based evidence evaluation.
+- Provides confidence scores to help prioritize difficult cases.
+- Keeps the human editor as the final decision-maker.
+- Helps identify unsupported, partially supported, or unclear reviewer comments.
 
 # Evidence RAG
 
@@ -89,6 +102,12 @@ Frédéric
 :::: {.columns}
 ::: {.column width="50%"}
 **Grid5000** is a large scale and flexible testbed for experiment-driven research in all areas of computer science.
+
+- Reliable research infrastructure.
+- Supported GPU-based execution of large language models.
+- Available in Europe
+- Helped ensure more controlled and reproducible model testing.
+
 :::
 ::: {.column width="50%"}
 ![](./img/16_06_26/grid5000.png)
@@ -186,21 +205,16 @@ Mehrdad
 ::::
 
 
-# What should be future steps ?
+# Future Steps
 
-......
+What are our next steps ?
 
-:::notes
-:::
+1. Test the system with more papers and reviewer comments.
+2. Compare results across different models and retrieval settings.
+3. Improve the confidence score with editor feedback.
+4. Extend the system to support more journals and disciplines.
 
 # Proof of Concept (POC)
-
-#
-
-![](./img/16_06_26/POC_review.png){fig-align="center"}
-
-:::notes
-:::
 
 # 
 

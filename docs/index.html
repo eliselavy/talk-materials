@@ -27,7 +27,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
   <link rel="stylesheet" href="style.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -221,7 +241,13 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 
 <section id="challenges-about-peer-review" class="title-slide slide level1 center">
 <h1>Challenges about peer review</h1>
-<p>…….</p>
+<ul>
+<li>Editorial decisions might rely on subjective interpretation of reviewer comments.</li>
+<li>Review processing is time-consuming.</li>
+<li>Important evidence can be overlooked when papers are long and complex.</li>
+<li>Limited transparency makes it difficult to justify editorial decisions, see <span class="citation" data-cites="martinboyle2026papertrail">Martin-Boyle et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2026</a>)</span>.</li>
+<li>Manual review processes are difficult to scale as submission volumes increase, see <span class="citation" data-cites="sen2025rigor">Sen and DeMazumder (<a href="#/bibliography" role="doc-biblioref" onclick="">2025</a>)</span>.</li>
+</ul>
 <aside class="notes">
 <p>Frédéric</p>
 <style type="text/css">
@@ -235,6 +261,19 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+
+<section id="advantages-of-our-work-for-peer-review" class="title-slide slide level1 center">
+<h1>Advantages of our work for peer review</h1>
+<ul>
+<li>Supports editors by linking reviewer comments to paper evidence.</li>
+<li>Makes peer review decisions more transparent and explainable.</li>
+<li>Reduces manual effort in checking whether comments are supported.</li>
+<li>Combines RAG retrieval with model-based evidence evaluation.</li>
+<li>Provides confidence scores to help prioritize difficult cases.</li>
+<li>Keeps the human editor as the final decision-maker.</li>
+<li>Helps identify unsupported, partially supported, or unclear reviewer comments.</li>
+</ul>
 </section>
 
 <section id="evidence-rag" class="title-slide slide level1 center scrollable">
@@ -252,6 +291,12 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Grid5000</strong> is a large scale and flexible testbed for experiment-driven research in all areas of computer science.</p>
+<ul>
+<li>Reliable research infrastructure.</li>
+<li>Supported GPU-based execution of large language models.</li>
+<li>Available in Europe</li>
+<li>Helped ensure more controlled and reproducible model testing.</li>
+</ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="./img/16_06_26/grid5000.png"></p>
 </div></div>
@@ -361,22 +406,15 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 </div></div>
 </section>
 
-<section id="what-should-be-future-steps" class="title-slide slide level1 center">
-<h1>What should be future steps ?</h1>
-<p>……</p>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<section id="future-steps" class="title-slide slide level1 center scrollable">
+<h1>Future Steps</h1>
+<p>What are our next steps ?</p>
+<ol type="1">
+<li>Test the system with more papers and reviewer comments.</li>
+<li>Compare results across different models and retrieval settings.</li>
+<li>Improve the confidence score with editor feedback.</li>
+<li>Extend the system to support more journals and disciplines.</li>
+</ol>
 </section>
 
 <section id="proof-of-concept-poc" class="title-slide slide level1 center">
@@ -385,24 +423,6 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 </section>
 
 <section id="section-8" class="title-slide slide level1 center">
-<h1></h1>
-
-<img data-src="./img/16_06_26/POC_review.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-
-<section id="section-9" class="title-slide slide level1 center">
 <h1></h1>
 <iframe data-external="1" src="https://player.vimeo.com/video/1197973843?h=62b701aeda" width="2500" height="650" frameborder="0" title="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
 <aside class="notes">
@@ -420,10 +440,18 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
       }</style></aside>
 </section>
 
-<section id="bibliography" class="title-slide slide level1 center">
+<section id="bibliography" class="title-slide slide level1 smaller scrollable">
 <h1>Bibliography</h1>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-martinboyle2026papertrail" class="csl-entry" role="listitem">
+Martin-Boyle, Anna, Cara A. C. Leckey, Martha C. Brown, and Harmanpreet Kaur. 2026. <span>“PaperTrail: A Claim-Evidence Interface for Grounding Provenance in LLM-Based Scholarly q&amp;a.”</span> In <em>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI ’26)</em>. ACM.
+</div>
+<div id="ref-sen2025rigor" class="csl-entry" role="listitem">
+Sen, Chandan K., and Deeptankar DeMazumder. 2025. <span>“Getting Started on Artificial Intelligence in Health Care and Clinical Research: Includes Rigor Checklist for Authors and Reviewers.”</span> <em>Advances in Wound Care</em> 15 (1).
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
