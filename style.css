@@ -53,6 +53,15 @@
   color: black;
 }
 
+#title-slide .title {
+  font-size: clamp(1rem, 4vw, 6rem);
+  line-height: 1.05;
+}
+
+#title-slide .quarto-title-authors {
+  margin-top: 0.6rem;
+}
+
 .subtitle {
   font-size: 100%;
   font-weight: bold;

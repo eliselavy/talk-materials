@@ -1,6 +1,6 @@
 ---
 title: "Towards an Interactive ‘Evidence-RAG’ Peer-Review Workspace for the Journal of Digital History"
-subtitle: "AI through History, History through AI - Tuesday 16th june 2026"
+subtitle: "AI through History, History through AI - Tuesday 16th June 2026"
 authors: 
   - name: Mehrdad Almasi
     orcid : 0000-0001-8203-0606
@@ -50,25 +50,60 @@ engine: markdown
 
 # Plan
 
-- Introduction
-- Challenges about peer review
-- Evidence RAG 
-- What should be the future steps ? 
-- POC
+1. Introduction
+2. Challenges about peer review
+3. Evidence RAG 
+    - Infrastructure 
+    - Pipeline
+    - Application
+    - Results
+4. What should be the future steps ? 
+5. Advantages
+6. Proof of Concept 
+
 
 ::: notes 
 Frédéric
 :::
+
+# Useful links
+
+:::: {.columns}
+::: {.column width="33%"}
+Get access to the **slides** 
+
+![](./img/16_06_26/qrcode_slides.png)
+:::
+::: {.column width="33%"}
+Get access to the **Github repository** 
+
+![](./img/16_06_26/qrcode_repo.png)
+:::
+::: {.column width="33%"}
+Get access to the **Journal of Digital History** 
+
+![](./img/16_06_26/qrcode_JDH.png)
+:::
+::::
+
 
 # Introduction
 
-........
+Journal of Digital history is an **international, academic, peer-reviewed and open-access journal**, the [Journal of Digital History](https://journalofdigitalhistory.org/en/) (JDH) based on the principle of multi-layered articles. 
+
+Lately, it has been difficult to find peer reviewers for Journal of Digital History.
+
+> More than half of researchers now use AI for peer review — often against guidance see @naddaf_more_2025
 
 ::: notes 
 Frédéric
+On this 50% :
+29% to summarize the manuscript
+identify gaps or check references
+28% to flag potential signs of plagiarism and image duplication 
 :::
 
-# Challenges about peer review
+# Challenges 
 
 - Editorial decisions might rely on subjective interpretation of reviewer comments.
 - Review processing is time-consuming.
@@ -80,15 +115,6 @@ Frédéric
 Frédéric
 :::
 
-# Advantages of our work for peer review
-
-- Supports editors by linking reviewer comments to paper evidence.
-- Makes peer review decisions more transparent and explainable.
-- Reduces manual effort in checking whether comments are supported.
-- Combines RAG retrieval with model-based evidence evaluation.
-- Provides confidence scores to help prioritize difficult cases.
-- Keeps the human editor as the final decision-maker.
-- Helps identify unsupported, partially supported, or unclear reviewer comments.
 
 # Evidence RAG
 
@@ -118,7 +144,22 @@ Frédéric
 
 ![](./img/16_06_26/pipeline.png){fig-align="center"}
 
-# JDH evidence audit app
+
+# Application
+
+We created a JDH evidence audit application.
+
+
+The **final confidence score** combines four components:
+
+> Confidence = 0.15 × Retrieval Strength + 0.25 × Model Support Strength + 0.45 × Evidence Specificity + 0.15 × Section Coverage 
+
+- 🔎 **Retrieval Strength**: average retrieval score of the retrieved chunks.
+- 🤖 **Model Support Strength**: to what extent the model judges the reviewer comment as correct.
+- 🎯 **Evidence Specificity**: to what extent the retrieved items are related to the reviewer comment; this judges the quality of the retrieved evidence.
+- 🧩 **Section Coverage**: unique retrieved sections divided by total paper sections.
+
+#
 
 ![](./img/16_06_26/JDH_evidence_audit_app_1.png)
 
@@ -146,11 +187,8 @@ Frédéric
 ![](./img/16_06_26/output.png){}
 :::
 ::: {.column width="50%"}
-- text placeholder
-- text placeholder
-- text placeholder
-- text placeholder
-- This is a test
+- paper 1 : reviewers provide more content
+- paper 3 : reviewers seem to have more difficulties
 :::
 ::::
 
@@ -167,10 +205,7 @@ Mehrdad
 ![](./img/16_06_26/output1.png){}
 :::
 ::: {.column width="50%"}
-- text placeholder
-- text placeholder
-- text placeholder
-- text placeholder
+- Claude_Qwen handled the task better than Qwen2
 :::
 ::::
 
@@ -214,6 +249,22 @@ What are our next steps ?
 3. Improve the confidence score with editor feedback.
 4. Extend the system to support more journals and disciplines.
 
+::: notes 
+Mehrdad
+:::
+
+# Advantages of our work 
+
+- Supports editors by linking reviewer comments to paper evidence.
+- Makes peer review decisions more transparent and explainable.
+- Helps identify unsupported, partially supported, or unclear reviewer comments.
+- Keeps the human editor as the final decision-maker.
+
+::: notes 
+Frédéric
+:::
+
+
 # Proof of Concept (POC)
 
 # 
@@ -221,6 +272,7 @@ What are our next steps ?
 {{< video https://vimeo.com/1197973843/62b701aeda  width="2500" height="650"  >}}
 
 :::notes
+Frédéric
 The video length is 3 minutes.
 :::
 
