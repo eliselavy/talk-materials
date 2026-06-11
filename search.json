@@ -1,9 +1,0 @@
-[
-  {
-    "objectID": "index.html#future-steps",
-    "href": "index.html#future-steps",
-    "title": "Towards an Interactive ‘Evidence-RAG’ Peer-Review Workspace for the Journal of Digital History",
-    "section": "Future Steps",
-    "text": "Future Steps\nWhat are our next steps ?\n\nTest the system with more papers and reviewer comments.\nCompare results across different models and retrieval settings.\nImprove the confidence score with editor feedback.\nExtend the system to support more journals and disciplines."
-  }
-]
