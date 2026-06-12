@@ -100,7 +100,9 @@ Frédéric
 
 Journal of Digital history is an **international, academic, peer-reviewed and open-access journal**, the [Journal of Digital History](https://journalofdigitalhistory.org/en/) (JDH) based on the principle of multi-layered articles. 
 
-Lately, it has been difficult to find peer reviewers for Journal of Digital History.
+<center>*As all academic journals, the JDH experiences a peer review crisis.*</center>
+
+<br />
 
 > More than half of researchers now use AI for peer review — often against guidance see @naddaf_more_2025
 
@@ -246,9 +248,16 @@ Mehrdad
 Mehrdad
 :::
 
-# 
+# what a human thinks
 
-... human results here
+- *claude-qwen* does a better job, because its ability to compare the article's content and the review's content is better
+
+- the system we set up is not good to evaluate reviewers' second (or third) round of comments, because lacks the ability to compare several versions of the article
+
+- the model should have access to the full GitHub repository, because some reviewers look at the full repository
+
+- there might be a problem of sycophancy: sometimes, the model agrees with two divergent reviewers' evaluations on one precise aspect of an article
+
 
 ::: notes 
 Frédéric
@@ -266,6 +275,7 @@ What are our next steps ?
 
 ::: notes 
 Frédéric
+
 :::
 
 # Advantages of our work 

@@ -6,8 +6,8 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.27">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
   <title>Towards an Interactive ‘Evidence-RAG’ Peer-Review Workspace for the Journal of Digital History</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -31,7 +34,6 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
-      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -48,7 +50,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
   <link rel="stylesheet" href="style.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -259,7 +261,10 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 <section id="introduction" class="title-slide slide level1 center">
 <h1>Introduction</h1>
 <p>Journal of Digital history is an <strong>international, academic, peer-reviewed and open-access journal</strong>, the <a href="https://journalofdigitalhistory.org/en/">Journal of Digital History</a> (JDH) based on the principle of multi-layered articles.</p>
-<p>Lately, it has been difficult to find peer reviewers for Journal of Digital History.</p>
+<center>
+<em>As all academic journals, the JDH experiences a peer review crisis.</em>
+</center>
+<p><br></p>
 <blockquote>
 <p>More than half of researchers now use AI for peer review — often against guidance see <span class="citation" data-cites="naddaf_more_2025">Naddaf (<a href="#/bibliography" role="doc-biblioref" onclick="">2025</a>)</span></p>
 </blockquote>
@@ -521,9 +526,14 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
       }</style></aside>
 </section>
 
-<section id="section-7" class="title-slide slide level1 center">
-<h1></h1>
-<p>… human results here</p>
+<section id="what-a-human-thinks" class="title-slide slide level1 center">
+<h1>what a human thinks</h1>
+<ul>
+<li><p><em>claude-qwen</em> does a better job, because its ability to compare the article’s content and the review’s content is better</p></li>
+<li><p>the system we set up is not good to evaluate reviewers’ second (or third) round of comments, because lacks the ability to compare several versions of the article</p></li>
+<li><p>the model should have access to the full GitHub repository, because some reviewers look at the full repository</p></li>
+<li><p>there might be a problem of sycophancy: sometimes, the model agrees with two divergent reviewers’ evaluations on one precise aspect of an article</p></li>
+</ul>
 <aside class="notes">
 <p>Frédéric</p>
 <style type="text/css">
@@ -591,7 +601,7 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 
 </section>
 
-<section id="section-8" class="title-slide slide level1 center">
+<section id="section-7" class="title-slide slide level1 center">
 <h1></h1>
 <div class="columns">
 <div class="column" style="width:30%;">
@@ -618,9 +628,9 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 <h1>Bibliography</h1>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-martinboyle2026papertrail" class="csl-entry" role="listitem">
-Martin-Boyle, Anna, Cara A. C. Leckey, Martha C. Brown, and Harmanpreet Kaur. 2026. <span>“PaperTrail: A Claim-Evidence Interface for Grounding Provenance in LLM-Based Scholarly q&amp;a.”</span> In <em>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI ’26)</em>. ACM.
+Martin-Boyle, Anna, Cara A. C. Leckey, Martha C. Brown, and Harmanpreet Kaur. 2026. <span>“PaperTrail: A Claim-Evidence Interface for Grounding Provenance in LLM-Based Scholarly q&amp;a.”</span> <em>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI ’26)</em>.
 </div>
 <div id="ref-naddaf_more_2025" class="csl-entry" role="listitem">
 Naddaf, Miryam. 2025. <span>“More Than Half of Researchers Now Use <span>AI</span> for Peer Review — Often Against Guidance.”</span> <em>Nature</em> 649 (8096): 273–74. <a href="https://doi.org/10.1038/d41586-025-04066-5">https://doi.org/10.1038/d41586-025-04066-5</a>.
@@ -918,7 +928,7 @@ Sen, Chandan K., and Deeptankar DeMazumder. 2025. <span>“Getting Started on Ar
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/eliselavy\.github\.io\/talk-materials\/");
+            var filterRegex = new RegExp('/' + window.location.host + '/');
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
