@@ -6,8 +6,8 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.27">
 
   <title>Towards an Interactive ‘Evidence-RAG’ Peer-Review Workspace for the Journal of Digital History</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,9 +16,6 @@
   <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -30,8 +27,28 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
   <link rel="stylesheet" href="style.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -134,7 +151,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Towards an Interactive ‘Evidence-RAG’ Peer-Review Workspace for the Journal of Digital History</h1>
-  <p class="subtitle">AI through History, History through AI - Tuesday 16th june 2026</p>
+  <p class="subtitle">AI through History, History through AI - Tuesday 16th June 2026</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -180,15 +197,50 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 </div>
 
 </section>
-<section id="plan" class="title-slide slide level1 center">
+<section id="plan" class="title-slide slide level1 center scrollable">
 <h1>Plan</h1>
-<ul>
+<ol type="1">
 <li>Introduction</li>
 <li>Challenges about peer review</li>
-<li>Evidence RAG</li>
+<li>Evidence RAG
+<ul>
+<li>Infrastructure</li>
+<li>Pipeline</li>
+<li>Application</li>
+<li>Results</li>
+</ul></li>
 <li>What should be the future steps ?</li>
-<li>POC</li>
-</ul>
+<li>Advantages</li>
+<li>Proof of Concept</li>
+</ol>
+<aside class="notes">
+<p>Frédéric</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="useful-links" class="title-slide slide level1 center">
+<h1>Useful links</h1>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p>Get access to the <strong>presentation slides</strong></p>
+<p><img data-src="./img/16_06_26/qrcode_slides.png"></p>
+</div><div class="column" style="width:33%;">
+<p>Get access to the <strong>Github repository</strong></p>
+<p><img data-src="./img/16_06_26/qrcode_repo.png"></p>
+</div><div class="column" style="width:33%;">
+<p>Get access to the <strong>Journal of Digital History</strong></p>
+<p><img data-src="./img/16_06_26/qrcode_JDH.png"></p>
+</div></div>
 <aside class="notes">
 <p>Frédéric</p>
 <style type="text/css">
@@ -206,9 +258,13 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 
 <section id="introduction" class="title-slide slide level1 center">
 <h1>Introduction</h1>
-<p>……..</p>
+<p>Journal of Digital history is an <strong>international, academic, peer-reviewed and open-access journal</strong>, the <a href="https://journalofdigitalhistory.org/en/">Journal of Digital History</a> (JDH) based on the principle of multi-layered articles.</p>
+<p>Lately, it has been difficult to find peer reviewers for Journal of Digital History.</p>
+<blockquote>
+<p>More than half of researchers now use AI for peer review — often against guidance see <span class="citation" data-cites="naddaf_more_2025">Naddaf (<a href="#/bibliography" role="doc-biblioref" onclick="">2025</a>)</span></p>
+</blockquote>
 <aside class="notes">
-<p>Frédéric</p>
+<p>Frédéric On this 50% : 29% to summarize the manuscript identify gaps or check references 28% to flag potential signs of plagiarism and image duplication</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -222,9 +278,14 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
       }</style></aside>
 </section>
 
-<section id="challenges-about-peer-review" class="title-slide slide level1 center">
-<h1>Challenges about peer review</h1>
-<p>…….</p>
+<section id="challenges" class="title-slide slide level1 center">
+<h1>Challenges</h1>
+<ul>
+<li>Review processing is time-consuming.</li>
+<li>Important evidence can be overlooked when papers are long and complex.</li>
+<li>Limited transparency makes it difficult to justify editorial decisions, see <span class="citation" data-cites="martinboyle2026papertrail">Martin-Boyle et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2026</a>)</span>.</li>
+<li>Manual review processes are difficult to scale as submission volumes increase, see <span class="citation" data-cites="sen2025rigor">Sen and DeMazumder (<a href="#/bibliography" role="doc-biblioref" onclick="">2025</a>)</span>.</li>
+</ul>
 <aside class="notes">
 <p>Frédéric</p>
 <style type="text/css">
@@ -242,9 +303,8 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 
 <section id="evidence-rag" class="title-slide slide level1 center">
 <h1>Evidence RAG</h1>
-<p>…….. We need to add some visualisations</p>
 <aside class="notes">
-<p>Mehrdad + Marion</p>
+<p>Frédéric</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -258,11 +318,261 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
       }</style></aside>
 </section>
 
-<section id="what-should-be-future-steps" class="title-slide slide level1 center">
-<h1>What should be future steps ?</h1>
-<p>……</p>
+<section id="infrastructure" class="title-slide slide level1 center">
+<h1>Infrastructure</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Grid5000</strong> is a large scale and flexible testbed for experiment-driven research in all areas of computer science.</p>
+<ul>
+<li>Reliable research infrastructure.</li>
+<li>Supported GPU-based execution of large language models.</li>
+<li>Available in Europe</li>
+<li>Helped ensure more controlled and reproducible model testing.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./img/16_06_26/grid5000.png"></p>
+</div></div>
 <aside class="notes">
+<p>Mehrdad</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 
+<section id="section" class="title-slide slide level1 center">
+<h1></h1>
+
+<img data-src="./img/16_06_26/pipeline.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>Mehrdad</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="application" class="title-slide slide level1 center">
+<h1>Application</h1>
+<p>We created a JDH evidence audit application.</p>
+<p>The <strong>final confidence score</strong> combines four components:</p>
+<blockquote>
+<p>Confidence = 0.15 × Retrieval Strength + 0.25 × Model Support Strength + 0.45 × Evidence Specificity + 0.15 × Section Coverage</p>
+</blockquote>
+<ul>
+<li>🔎 <strong>Retrieval Strength</strong>: average retrieval score of the retrieved chunks.</li>
+<li>🤖 <strong>Model Support Strength</strong>: to what extent the model judges the reviewer comment as correct.</li>
+<li>🎯 <strong>Evidence Specificity</strong>: to what extent the retrieved items are related to the reviewer comment; this judges the quality of the retrieved evidence.</li>
+<li>🧩 <strong>Section Coverage</strong>: unique retrieved sections divided by total paper sections.</li>
+</ul>
+<aside class="notes">
+<p>Mehrdad</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="section-1" class="title-slide slide level1 center">
+<h1></h1>
+
+<img data-src="./img/16_06_26/JDH_evidence_audit_app_1.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>Mehrdad</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="section-2" class="title-slide slide level1 center">
+<h1></h1>
+
+<img data-src="./img/16_06_26/JDH_evidence_audit_app_2.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>Mehrdad</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="section-3" class="title-slide slide level1 center">
+<h1></h1>
+
+<img data-src="./img/16_06_26/JDH_evidence_audit_app_3.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>Mehrdad</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="results" class="title-slide slide level1 center">
+<h1>Results</h1>
+
+</section>
+
+<section id="section-4" class="title-slide slide level1 center">
+<h1></h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./img/16_06_26/output.png"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>paper 1 : reviewers provide more content</li>
+<li>paper 3 : reviewers seem to have more difficulties</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Mehrdad</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="section-5" class="title-slide slide level1 center">
+<h1></h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./img/16_06_26/output1.png"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Claude_Qwen handled the task better than Qwen2</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Mehrdad</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="section-6" class="title-slide slide level1 center">
+<h1></h1>
+
+<img data-src="./img/16_06_26/output2.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>Mehrdad</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="section-7" class="title-slide slide level1 center">
+<h1></h1>
+<p>… human results here</p>
+<aside class="notes">
+<p>Frédéric</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="future-steps" class="title-slide slide level1 center scrollable">
+<h1>Future Steps</h1>
+<p>What are our next steps ?</p>
+<ol type="1">
+<li>Test the system with more papers and reviewer comments.</li>
+<li>Compare results across different models and retrieval settings.</li>
+<li>Improve the confidence score with editor feedback.</li>
+<li>Extend the system to support more journals and disciplines.</li>
+</ol>
+<aside class="notes">
+<p>Frédéric</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="advantages-of-our-work" class="title-slide slide level1 center">
+<h1>Advantages of our work</h1>
+<ul>
+<li>Supports editors by linking reviewer comments to paper evidence.</li>
+<li>Makes peer review decisions more transparent and explainable.</li>
+<li>Helps identify unsupported, partially supported, or unclear reviewer comments.</li>
+<li>Keeps the human editor as the final decision-maker.</li>
+</ul>
+<aside class="notes">
+<p>Frédéric</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -278,9 +588,19 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
 
 <section id="proof-of-concept-poc" class="title-slide slide level1 center">
 <h1>Proof of Concept (POC)</h1>
-<p>…..</p>
-<aside class="notes">
 
+</section>
+
+<section id="section-8" class="title-slide slide level1 center">
+<h1></h1>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p>Get access to the <strong>video</strong> <img data-src="./img/16_06_26/qrcode_video.png"></p>
+</div><div class="column" style="width:70%;">
+<iframe data-external="1" src="https://player.vimeo.com/video/1197973843?h=62b701aeda" width="2500" height="650" frameborder="0" title="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+</div></div>
+<aside class="notes">
+<p>Frédéric The video length is 3 minutes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -294,16 +614,27 @@ Marion Salaün <a href="https://orcid.org/0009-0005-3624-823X" class="quarto-tit
       }</style></aside>
 </section>
 
-<section id="bibliography" class="title-slide slide level1 center">
+<section id="bibliography" class="title-slide slide level1 smaller scrollable">
 <h1>Bibliography</h1>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-martinboyle2026papertrail" class="csl-entry" role="listitem">
+Martin-Boyle, Anna, Cara A. C. Leckey, Martha C. Brown, and Harmanpreet Kaur. 2026. <span>“PaperTrail: A Claim-Evidence Interface for Grounding Provenance in LLM-Based Scholarly q&amp;a.”</span> In <em>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI ’26)</em>. ACM.
+</div>
+<div id="ref-naddaf_more_2025" class="csl-entry" role="listitem">
+Naddaf, Miryam. 2025. <span>“More Than Half of Researchers Now Use <span>AI</span> for Peer Review — Often Against Guidance.”</span> <em>Nature</em> 649 (8096): 273–74. <a href="https://doi.org/10.1038/d41586-025-04066-5">https://doi.org/10.1038/d41586-025-04066-5</a>.
+</div>
+<div id="ref-sen2025rigor" class="csl-entry" role="listitem">
+Sen, Chandan K., and Deeptankar DeMazumder. 2025. <span>“Getting Started on Artificial Intelligence in Health Care and Clinical Research: Includes Rigor Checklist for Authors and Reviewers.”</span> <em>Advances in Wound Care</em> 15 (1).
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="img/logo-jdh.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Revue 3.0 - 7 mai 2026</p>
+<p>AI through History, History through AI - Tuesday 16th june 2026</p>
 </div>
 </div></div>
 
