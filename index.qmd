@@ -1,22 +1,27 @@
 ---
 title: "Towards an Interactive ‘Evidence-RAG’ Peer-Review Workspace for the Journal of Digital History"
 subtitle: "AI through History, History through AI - Tuesday 16th June 2026"
-authors: 
+authors:
   - name: Mehrdad Almasi
-    orcid : 0000-0001-8203-0606
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    orcid: 0000-0001-8203-0606
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Frédéric Clavert
     orcid: 0000-0002-0237-2532
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Elisabeth Guerard
     orcid: 0000-0001-7742-4141
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Mirjam Pfeiffer
-    orcid : 0009-0005-2265-5926
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    orcid: 0009-0005-2265-5926
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Marion Salaün
-    orcid : 0009-0005-3624-823X
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    orcid: 0009-0005-3624-823X
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
 lang: en
 editor: source
 format:
@@ -70,7 +75,7 @@ Frédéric
 
 :::: {.columns}
 ::: {.column width="33%"}
-Get access to the **slides** 
+Get access to the **presentation slides** 
 
 ![](./img/16_06_26/qrcode_slides.png)
 :::
@@ -85,6 +90,10 @@ Get access to the **Journal of Digital History**
 ![](./img/16_06_26/qrcode_JDH.png)
 :::
 ::::
+
+::: notes 
+Frédéric
+:::
 
 
 # Introduction
@@ -105,7 +114,6 @@ identify gaps or check references
 
 # Challenges 
 
-- Editorial decisions might rely on subjective interpretation of reviewer comments.
 - Review processing is time-consuming.
 - Important evidence can be overlooked when papers are long and complex.
 - Limited transparency makes it difficult to justify editorial decisions, see @martinboyle2026papertrail.
@@ -118,10 +126,10 @@ Frédéric
 
 # Evidence RAG
 
-1. Infrastructure : Grid5000 or local model
-2. Pipeline
-3. JDH evidence audit application
-4. Results
+
+::: notes 
+Frédéric
+:::
 
 # Infrastructure
 
@@ -140,10 +148,17 @@ Frédéric
 :::
 ::::
 
+::: notes 
+Mehrdad
+:::
+
 # 
 
 ![](./img/16_06_26/pipeline.png){fig-align="center"}
 
+::: notes 
+Mehrdad
+:::
 
 # Application
 
@@ -159,28 +174,38 @@ The **final confidence score** combines four components:
 - 🎯 **Evidence Specificity**: to what extent the retrieved items are related to the reviewer comment; this judges the quality of the retrieved evidence.
 - 🧩 **Section Coverage**: unique retrieved sections divided by total paper sections.
 
-#
-
-![](./img/16_06_26/JDH_evidence_audit_app_1.png)
-
-#
-
-![](./img/16_06_26/JDH_evidence_audit_app_2.png)
+::: notes 
+Mehrdad
+:::
 
 #
 
-![](./img/16_06_26/JDH_evidence_audit_app_3.png)
+![](./img/16_06_26/JDH_evidence_audit_app_1.png){fig-align="center"}
+
+::: notes 
+Mehrdad
+:::
 
 #
 
-![](./img/16_06_26/JDH_evidence_audit_app_4.png)
-![](./img/16_06_26/JDH_evidence_audit_app_5.png)
+![](./img/16_06_26/JDH_evidence_audit_app_2.png){fig-align="center"}
+
+::: notes 
+Mehrdad
+:::
+
+#
+
+![](./img/16_06_26/JDH_evidence_audit_app_3.png){fig-align="center"}
+
+::: notes 
+Mehrdad
+:::
 
 
 # Results
 
 #
-
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -191,7 +216,6 @@ The **final confidence score** combines four components:
 - paper 3 : reviewers seem to have more difficulties
 :::
 ::::
-
 
 ::: notes 
 Mehrdad
@@ -209,35 +233,26 @@ Mehrdad
 :::
 ::::
 
-# 
-
-
-:::: {.columns}
-::: {.column width="50%"}
-![](./img/16_06_26/output2.png){}
+::: notes 
+Mehrdad
 :::
-::: {.column width="50%"}
-- text placeholder
-- text placeholder
-- text placeholder
-- text placeholder
-:::
-::::
 
 # 
 
 
-:::: {.columns}
-::: {.column width="50%"}
-![](./img/16_06_26/output3.png){}
+![](./img/16_06_26/output2.png){fig-align="center"}
+
+::: notes 
+Mehrdad
 :::
-::: {.column width="50%"}
-- text placeholder
-- text placeholder
-- text placeholder
-- text placeholder
+
+# 
+
+... human results here
+
+::: notes 
+Frédéric
 :::
-::::
 
 
 # Future Steps
@@ -250,7 +265,7 @@ What are our next steps ?
 4. Extend the system to support more journals and disciplines.
 
 ::: notes 
-Mehrdad
+Frédéric
 :::
 
 # Advantages of our work 
@@ -267,9 +282,18 @@ Frédéric
 
 # Proof of Concept (POC)
 
+
 # 
 
+:::: {.columns}
+::: {.column width="30%"}
+Get access to the **video** 
+![](./img/16_06_26/qrcode_video.png)
+:::
+::: {.column width="70%"}
 {{< video https://vimeo.com/1197973843/62b701aeda  width="2500" height="650"  >}}
+:::
+::::
 
 :::notes
 Frédéric
