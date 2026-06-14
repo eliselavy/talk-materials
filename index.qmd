@@ -1,22 +1,27 @@
 ---
 title: "Towards an Interactive ‘Evidence-RAG’ Peer-Review Workspace for the Journal of Digital History"
-subtitle: "AI through History, History through AI - Tuesday 16th june 2026"
-authors: 
+subtitle: "AI through History, History through AI - Tuesday 16th June 2026"
+authors:
   - name: Mehrdad Almasi
-    orcid : 0000-0001-8203-0606
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    orcid: 0000-0001-8203-0606
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Frédéric Clavert
     orcid: 0000-0002-0237-2532
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Elisabeth Guerard
     orcid: 0000-0001-7742-4141
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Mirjam Pfeiffer
-    orcid : 0009-0005-2265-5926
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    orcid: 0009-0005-2265-5926
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
   - name: Marion Salaün
-    orcid : 0009-0005-3624-823X
-    affiliations: Luxembourg Centre for Contemporary and Digital History (C²DH)
+    orcid: 0009-0005-3624-823X
+    affiliations:
+      - Luxembourg Centre for Contemporary and Digital History (C²DH)
 lang: en
 editor: source
 format:
@@ -28,7 +33,7 @@ format:
     logo: img/logo-jdh.png
     header-logo: img/logo-jdh.png
 #   hide-from-titleSlide: text
-    footer: "Revue 3.0 - 7 mai 2026"
+    footer: "AI through History, History through AI - Tuesday 16th june 2026"
     scrollable: TRUE
     smaller: TRUE
     overview: TRUE
@@ -50,54 +55,238 @@ engine: markdown
 
 # Plan
 
-- Introduction
-- Challenges about peer review
-- Evidence RAG 
-- What should be the future steps ? 
-- POC
+1. Introduction
+2. Challenges about peer review
+3. Evidence RAG 
+    - Infrastructure 
+    - Pipeline
+    - Application
+    - Results
+4. What should be the future steps ? 
+5. Advantages
+6. Proof of Concept 
+
 
 ::: notes 
 Frédéric
 :::
+
+# Useful links
+
+:::: {.columns}
+::: {.column width="33%"}
+Get access to the **presentation slides** 
+
+![](./img/16_06_26/qrcode_slides.png)
+:::
+::: {.column width="33%"}
+Get access to the **Github repository** 
+
+![](./img/16_06_26/qrcode_repo.png)
+:::
+::: {.column width="33%"}
+Get access to the **Journal of Digital History** 
+
+![](./img/16_06_26/qrcode_JDH.png)
+:::
+::::
+
+::: notes 
+Frédéric
+:::
+
 
 # Introduction
 
-........
+Journal of Digital history is an **international, academic, peer-reviewed and open-access journal**, the [Journal of Digital History](https://journalofdigitalhistory.org/en/) (JDH) based on the principle of multi-layered articles. 
+
+<center>*As all academic journals, the JDH experiences a peer review crisis.*</center>
+
+<br />
+
+> More than half of researchers now use AI for peer review — often against guidance see @naddaf_more_2025
+
+::: notes 
+Frédéric
+On this 50% :
+29% to summarize the manuscript
+identify gaps or check references
+28% to flag potential signs of plagiarism and image duplication 
+:::
+
+# Challenges 
+
+- Review processing is time-consuming.
+- Important evidence can be overlooked when papers are long and complex.
+- Limited transparency makes it difficult to justify LLM-supported scholarly assessments and decisions, see @martinboyle2026papertrail.
+- Manual review processes are difficult to scale as submission volumes increase, see @kim2025position. 
 
 ::: notes 
 Frédéric
 :::
 
-# Challenges about peer review
-
-.......
-
-
-::: notes 
-Frédéric
-:::
 
 # Evidence RAG
 
-........
-We need to add some visualisations
 
 ::: notes 
-Mehrdad + Marion
+Frédéric
 :::
 
-# What should be future steps ?
+# Infrastructure
 
-......
+:::: {.columns}
+::: {.column width="50%"}
+**Grid5000** is a large scale and flexible testbed for experiment-driven research in all areas of computer science.
 
-:::notes
+- Reliable research infrastructure.
+- Supported GPU-based execution of large language models.
+- Available in Europe
+- Helped ensure more controlled and reproducible model testing.
+
 :::
+::: {.column width="50%"}
+![](./img/16_06_26/grid5000.png)
+:::
+::::
+
+::: notes 
+Mehrdad
+:::
+
+# 
+
+![](./img/16_06_26/pipeline.png){fig-align="center"}
+
+::: notes 
+Mehrdad
+:::
+
+# Application
+
+We created a JDH evidence audit application.
+
+
+The **final confidence score** combines four components:
+
+> Confidence = 0.15 × Retrieval Strength + 0.25 × Model Support Strength + 0.45 × Evidence Specificity + 0.15 × Section Coverage 
+
+- 🔎 **Retrieval Strength**: average retrieval score of the retrieved chunks.
+- 🤖 **Model Support Strength**: to what extent the model judges the reviewer comment as correct.
+- 🎯 **Evidence Specificity**: to what extent the retrieved items are related to the reviewer comment; this judges the quality of the retrieved evidence.
+- 🧩 **Section Coverage**: unique retrieved sections divided by total paper sections.
+
+::: notes 
+Mehrdad
+:::
+
+#
+
+![](./img/16_06_26/JDH_evidence_audit_app_1.png){fig-align="center"}
+
+::: notes 
+Mehrdad
+:::
+
+#
+
+![](./img/16_06_26/JDH_evidence_audit_app_2.png){fig-align="center"}
+
+::: notes 
+Mehrdad
+:::
+
+
+
+# Results
+
+#
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./img/16_06_26/output.png){}
+:::
+::: {.column width="50%"}
+- paper 1 and 2: reviewers likely provided more accurate content
+- paper 3 : reviewers seem to have more difficulties during the evaluation
+:::
+::::
+
+::: notes 
+Mehrdad
+:::
+
+
+
+# 
+
+
+![](./img/16_06_26/output2.png){fig-align="center"}
+
+::: notes 
+Mehrdad
+:::
+
+# what a human thinks
+
+- *claude-qwen* does a better job, because its ability to compare the article's content and the review's content is better
+
+- the system we set up is not good to evaluate reviewers' second (or third) round of comments, because lacks the ability to compare several versions of the article
+
+- the model should have access to the full GitHub repository, because some reviewers look at the full repository
+
+- there might be a problem of sycophancy: sometimes, the model agrees with two divergent reviewers' evaluations on one precise aspect of an article
+
+
+::: notes 
+Frédéric
+:::
+
+
+# Future Steps
+
+What are our next steps ?
+
+1. Test the system with more papers and reviewer comments.
+2. Compare results across different models and retrieval settings.
+3. Improve the confidence score with editor feedback.
+4. Extend the system to support more journals and disciplines.
+
+::: notes 
+Frédéric
+
+:::
+
+# Advantages of our work 
+
+- Supports editors by linking reviewer comments to paper evidence.
+- Makes peer review decisions more transparent and explainable.
+- Helps identify unsupported, partially supported, or unclear reviewer comments.
+- Keeps the human editor as the final decision-maker.
+
+::: notes 
+Frédéric
+:::
+
 
 # Proof of Concept (POC)
 
-.....
+
+# 
+
+:::: {.columns}
+::: {.column width="30%"}
+Get access to the **video** 
+![](./img/16_06_26/qrcode_video.png)
+:::
+::: {.column width="70%"}
+{{< video https://vimeo.com/1197973843/62b701aeda  width="2500" height="650"  >}}
+:::
+::::
 
 :::notes
+Frédéric
+The video length is 3 minutes.
 :::
 
 

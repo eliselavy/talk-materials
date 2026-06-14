@@ -20,3 +20,7 @@ The syntax is quite similar with Markdown but do not hesitate to check on Quarto
 
 To have access to your slides on your : **username.github.io/talk-materials** website.
 You need to use this command line to publish your slides on it : `quarto publish gh-pages`
+
+# Speaker view
+
+To have the speaker view, once you have load the presentation in the browser, you have just to press `S` on your keyboard to have the presenter view with clock and notes.
