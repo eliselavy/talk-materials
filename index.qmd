@@ -118,8 +118,8 @@ identify gaps or check references
 
 - Review processing is time-consuming.
 - Important evidence can be overlooked when papers are long and complex.
-- Limited transparency makes it difficult to justify editorial decisions, see @martinboyle2026papertrail.
-- Manual review processes are difficult to scale as submission volumes increase, see @sen2025rigor. 
+- Limited transparency makes it difficult to justify LLM-supported scholarly assessments and decisions, see @martinboyle2026papertrail.
+- Manual review processes are difficult to scale as submission volumes increase, see @kim2025position. 
 
 ::: notes 
 Frédéric
@@ -196,13 +196,6 @@ Mehrdad
 Mehrdad
 :::
 
-#
-
-![](./img/16_06_26/JDH_evidence_audit_app_3.png){fig-align="center"}
-
-::: notes 
-Mehrdad
-:::
 
 
 # Results
@@ -214,8 +207,8 @@ Mehrdad
 ![](./img/16_06_26/output.png){}
 :::
 ::: {.column width="50%"}
-- paper 1 : reviewers provide more content
-- paper 3 : reviewers seem to have more difficulties
+- paper 1 and 2: reviewers likely provided more accurate content
+- paper 3 : reviewers seem to have more difficulties during the evaluation
 :::
 ::::
 
@@ -223,21 +216,7 @@ Mehrdad
 Mehrdad
 :::
 
-# 
 
-
-:::: {.columns}
-::: {.column width="50%"}
-![](./img/16_06_26/output1.png){}
-:::
-::: {.column width="50%"}
-- Claude_Qwen handled the task better than Qwen2
-:::
-::::
-
-::: notes 
-Mehrdad
-:::
 
 # 
 
