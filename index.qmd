@@ -140,9 +140,11 @@ Frédéric
 **Grid5000** is a large scale and flexible testbed for experiment-driven research in all areas of computer science.
 
 - Reliable research infrastructure.
-- Supported GPU-based execution of large language models.
-- Available in Europe
+- 11 sites in France, Belgium and Luxembourg.
+- ~25,000 cores, 800 compute nodes, 550+ GPUs
 - Helped ensure more controlled and reproducible model testing.
+- Focus Areas: Parallel/distributed computing, cloud, HPC, Big Data, AI
+
 
 :::
 ::: {.column width="50%"}
