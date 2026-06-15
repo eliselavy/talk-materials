@@ -77,17 +77,17 @@ Frédéric
 ::: {.column width="33%"}
 Get access to the **presentation slides** 
 
-![](./img/16_06_26/qrcode_slides.png)
+![](./img/16_06_26/qrcode_slides.png){width=220px height=220px}
 :::
 ::: {.column width="33%"}
 Get access to the **Github repository** 
 
-![](./img/16_06_26/qrcode_repo.png)
+![](./img/16_06_26/qrcode_repo1.png){width=220px height=220px}
 :::
 ::: {.column width="33%"}
 Get access to the **Journal of Digital History** 
 
-![](./img/16_06_26/qrcode_JDH.png)
+![](./img/16_06_26/qrcode_JDH.png){width=220px height=220px}
 :::
 ::::
 
