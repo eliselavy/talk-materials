@@ -210,7 +210,7 @@ Mehrdad
 :::
 ::: {.column width="50%"}
 - paper 1 and paper 2: reviewers likely provided more accurate content
-- paper 3 : reviewers seem to have more difficulties during the evaluation
+- paper 3: reviewers seem to have more difficulties during the evaluation
 :::
 ::::
 
