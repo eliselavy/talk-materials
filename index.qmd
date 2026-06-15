@@ -207,7 +207,7 @@ Mehrdad
 ![](./img/16_06_26/output.png){}
 :::
 ::: {.column width="50%"}
-- paper 1 and 2: reviewers likely provided more accurate content
+- paper 1 and paper 2: reviewers likely provided more accurate content
 - paper 3 : reviewers seem to have more difficulties during the evaluation
 :::
 ::::
@@ -227,7 +227,7 @@ Mehrdad
 Mehrdad
 :::
 
-# what a human thinks
+# What a human thinks
 
 - *claude-qwen* does a better job, because its ability to compare the article's content and the review's content is better
 
