@@ -279,7 +279,7 @@ Frédéric
 :::: {.columns}
 ::: {.column width="30%"}
 Get access to the **video** 
-![](./img/16_06_26/qrcode_video.png)
+![](./img/16_06_26/qrcode_video1.png)
 :::
 ::: {.column width="70%"}
 {{< video https://vimeo.com/1197973843/62b701aeda  width="2500" height="650"  >}}
